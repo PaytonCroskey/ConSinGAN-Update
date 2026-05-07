@@ -29,7 +29,7 @@ To train a model with the default parameters from ConSinGAN:
 ```bash
 !python main_train.py --gpu 0 --train_mode generation --input_name Images/Generation/angkorwat.jpg
 ```
-#Image Animation
+# Image Animation
 To generate GIFs from the trained model:
 ```bash
 !python main_train.py --gpu 0 --train_mode animation --input_name Images/Animation/lightning1.png
@@ -37,7 +37,7 @@ To generate GIFs from the trained model:
 ```bash
 !python evaluate_model.py --gpu 0 --model_dir TrainedModels/lightning1/...
 ```
-#Harmonization
+# Harmonization
 To train a default harmonization model that does not use anything besides the training image:
 ```bash
 !python main_train.py --gpu 0 --train_mode harmonization --train_stages 3 --min_size 250 --lrelu_alpha 0.3 --niter 1000 --batch_norm --input_name Images/Harmonization/scream.jpg
